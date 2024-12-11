@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main container -->
+  <div class="main-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Spotify Clone</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Your Library</a></li>
+      </ul>
+    </div>
+
+    <!-- Player Section -->
+    <div class="player">
+      <div class="song-info">
+        <h3 id="song-title">No Song Playing</h3>
+        <p id="artist-name">Artist Name</p>
+      </div>
+
+      <audio id="audio-player" preload="auto">
+        <source id="audio-source" src="song1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="controls">
+        <button id="prev-btn">&#9664;</button>
+        <button id="play-btn">Play</button>
+        <button id="next-btn">&#9654;</button>
+      </div>
+
+      <div class="progress-bar">
+        <input id="progress" type="range" value="0" max="100">
+      </div>
+
+      <div class="volume-control">
+        <input id="volume" type="range" value="100" max="100">
+      </div>
+    </div>
+
+    <!-- Playlist Section -->
+    <div class="playlist">
+      <ul id="playlist">
+        <li data-song="song1.mp3" data-title="Song 1" data-artist="Artist 1">
+          <span class="song-title">Song 1</span> - <span class="song-artist">Artist 1</span>
+        </li>
+        <li data-song="song2.mp3" data-title="Song 2" data-artist="Artist 2">
+          <span class="song-title">Song 2</span> - <span class="song-artist">Artist 2</span>
+        </li>
+        <li data-song="song3.mp3" data-title="Song 3" data-artist="Artist 3">
+          <span class="song-title">Song 3</span> - <span class="song-artist">Artist 3</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="beatbox.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/77c0071b7d.js"
+            crossorigin="anonymous"></script>
+        <title>Beatbox</title>
+    </head>
+    <body>
+        <main>
+            <nav>
+                <ul>
+                    <li class="brand"><img src="music-player.png"
+                            alt="Beatbox">Beatbox</li>
+                    <li>Home</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="SongList">
+                    <h1>Best of Beatbox - No Copyright Sounds</h1>
+                    <div class="songitemconatiner">
+                        <div class="SongItem">
+                            <img alt="1">
+                            <span class="songName">Amplifier</span>
+                            <span class="songlistdisplay"><span
+                                    class="timestamp">03:40 <i id="0"
+                                        class=" far songItemPlay fa-play-circle"
+                                        id="Play"></i> </span> </span>
+                        </div>
+                        <div class="SongItem">
+                            <img alt="1">
+                            <span class="songName">Amplifier</span>
+                            <span class="songlistdisplay"><span
+                                    class="timestamp">03:40 <i id="1"
+                                        class="far songItemPlay fa-play-circle"
+                                        id="Play"></i> </span> </span>
+                        </div>
+                        <div class="SongItem">
+                            <img alt="1">
+                            <span class="songName">Amplifier</span>
+                            <span class="songlistdisplay"><span
+                                    class="timestamp">03:40 <i id="2"
+                                        class="far songItemPlay fa-play-circle"
+                                        id="Play"></i> </span> </span>
+                        </div>
+                        <div class="SongItem">
+                            <img alt="1">
+                            <span class="songName">Amplifier</span>
+                            <span class="songlistdisplay"><span
+                                    class="timestamp">03:40 <i id="3"
+                                        class="far songItemPlay fa-play-circle"
+                                        id="Play"></i> </span> </span>
+                        </div>
+                        <div class="SongItem">
+                            <img alt="1">
+                            <span class="songName">Amplifier</span>
+                            <span class="songlistdisplay"><span
+                                    class="timestamp">03:40 <i id="4"
+                                        class="far songItemPlay fa-play-circle"
+                                        id="Play"></i> </span> </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="songbanner"></div>
+            </div>
+
+            <div class="bottom">
+                <div class="st-range-end">
+                <span id="starting-time">00:00</span>
+                <input type="range" id="progressbar" min="0" value="0"
+                    max="100">
+                <span id="ending-time">03:40</span>
+            </div>
+                <div class="icons">
+                    <i class="fa-solid fa-backward-step" id="previous"></i>
+                    <!-- <i class="fa-regular fa-circle-pause"></i> -->
+                    <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+                    <i class="fa-solid fa-forward-step" id="next"></i>
+                </div>
+                <div class="songinfo">
+                    <img src="playing.gif" width="42px" alt="gif" id="gif">
+                    <span id="masterSongName">Amplifier-Imraan Khan</span>
+                </div>
+            </div>
+        </main>
+
+        <script src="beatbox.js"></script>
+    </body>
+</html>
